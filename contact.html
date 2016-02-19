@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CONTACT</title>
+<link rel="stylesheet" type="text/css" href="css/stile_responsive.css"/><!--link foglio stile-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic&subset=latin,latin-ext' 
+rel='stylesheet' type='text/css'> <!-- font utilizzato -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/animatedcollapse.js"></script>
+<script type="text/javascript" src="js/myjavascript.js"></script>
+<script type="text/javascript">
+animatedcollapse.addDiv('jason', 'optional_attribute_string')
+animatedcollapse.init()
+</script>
+
+</head>
+
+<body> 
+	<div id="up">
+    	<div id="top">
+        	<img src="images/foto.png" alt="foto" />
+            <br/>
+        	<img src="images/logo.png" class="logo"/>
+        </div><!--chiusura top-->
+        
+        <div class="linea"></div>
+        	
+        <ul class="menu_fisso">
+        	<a href="index.html"><li>HOME</li></a>
+            <a href="about.html"><li>ABOUT</li></a>
+            <a href="services.html"> <li>services</li></a>
+            <a href="portfolio.html"><li>PORTFOLIO</li></a>
+            <a href="#"> <li class="selected">contact me</li></a>
+        </ul><br/><br/>
+        
+        <div id="appare">
+            
+             <ul class="menu_fisso" id="jason">
+                <a href="index.html"><li>HOME</li></a>
+                <a href="about.html"><li>ABOUT</li></a>
+                <a href="services.html"> <li>services</li></a>
+                <a href="portfolio.html"><li>PORTFOLIO</li></a>
+                <a href="#"> <li class="selected">contact me</li></a>
+            </ul><br/><br/>
+            
+                <a href="javascript:animatedcollapse.toggle('jason')" class="nodisplay">
+                    <img src="images/freccia_brutta.png" />
+                </a>
+      	 </div><!--fine div appare-->
+         <!--id jason di js sovrascrive le regole css di menu_fisso, bisogna creare un div appare e 
+         regolare i display none o block a seconda della diversa device-->
+         
+		<div id="contenitore">
+        <h1>Questa è la pagina Contact</h1>
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.2422729263344!2d9.1623409!3d45.4447738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c4169f7bfa09%3A0x31b5e643a596e801!2sNewpeople+Team+Srl!5e0!3m2!1sit!2sit!4v1436345982949" class="mappa" frameborder="0" style="border:0" allowfullscreen>
+            	<!--Vai a togliere la width e la height indicate in questa stringa e crei una classe map ad hoc nel css-->
+            </iframe>
+            <form name="contact_form" method="post" action="php/inviamela.php" >
+            	<table width="450px" >
+                   <tr>
+                        <td>
+                            <input type="text" name="first_name" value="nome*" />
+                        </td>
+                   </tr>
+                   <tr>
+                        <td>
+                            <input type="text" name="last_name" value="cognome*" />
+                        </td>     
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" name="email" value="Email*" />
+                        </td>
+                    </tr>
+                        <td>
+                            <input type="text" name="telephone" value="telefono" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <textarea rows="20" name="comments" maxlength="1000">
+                            *comments
+                            </textarea>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="reset" value="annulla" class="botti"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="invia" class="botti"/>
+                        </td>
+                    </tr>
+                
+                </table>
+            </form>
+        </div><!--chiusura id contenitore-->
+    </div><!--chiusura id up-->
+</body>
+</html>

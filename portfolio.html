@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>PORTFOLIO</title>
+<link rel="stylesheet" type="text/css" href="css/stile_responsive.css"/><!--link foglio stile-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic&subset=latin,latin-ext' 
+rel='stylesheet' type='text/css'> <!-- font utilizzato -->
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/animatedcollapse.js"></script>
+<script type="text/javascript" src="js/myjavascript.js"></script>
+<script type="text/javascript">
+animatedcollapse.addDiv('jason', 'optional_attribute_string')
+animatedcollapse.init()
+</script>
+
+</head>
+
+<body> 
+	<div id="up">
+    	<div id="top">
+        	<img src="images/foto.png" alt="foto" />
+            <br/>
+        	<img src="images/logo.png" class="logo"/>
+        </div><!--chiusura top-->
+        
+        <div class="linea"></div>
+        	
+        <ul class="menu_fisso">
+        	<a href="index.html"><li>HOME</li></a>
+            <a href="about.html"><li>ABOUT</li></a>
+            <a href="services.html"> <li>services</li></a>
+            <a href="#"><li class="selected">PORTFOLIO</li></a>
+            <a href="contact.html"> <li>contact me</li></a>
+        </ul><br/><br/>
+        
+        <div id="appare">
+            
+             <ul class="menu_fisso" id="jason">
+                <a href="index.html"><li>HOME</li></a>
+                <a href="about.html"><li>ABOUT</li></a>
+                <a href="services.html"> <li>services</li></a>
+                <a href="#"><li class="selected">PORTFOLIO</li></a>
+                <a href="contact.html"> <li>contact me</li></a>
+            </ul><br/><br/>
+            
+                <a href="javascript:animatedcollapse.toggle('jason')" class="nodisplay">
+                    <img src="images/freccia_brutta.png" />
+                </a>
+      	 </div><!--fine div appare-->
+         <!--id jason di js sovrascrive le regole css di menu_fisso, bisogna creare un div appare e 
+         regolare i display none o block a seconda della diversa device-->
+         
+		<div id="contenitore">
+        <h1>Questa è la pagina ABOUT</h1>
+        	<div class="box">
+            	<h1 class="verde">WEDDING</h1>
+                
+                	<div class="linea"></div>
+                
+                <p>The angle is specified as an angle between a horizontal line and the gradient line, 
+                going counter-clockwise. In other words, 0deg creates a bottom to top gradient, 
+                while 90deg generates a left to right gradient.
+                </p>
+                
+                	<div class="linea"></div>
+                
+                <a href="#" class="verde">READ MORE</a>
+                
+                <img src="images/tondo1.png" alt="sizza" class="boximage"/>
+                
+            </div><!--chiusura id box-->
+            
+            <div class="box">
+            	<h1 class="bianco">FASHION</h1>
+                
+                	<div class="linea"></div>
+                
+                <p>The angle is specified as an angle between a horizontal line and the gradient line, 
+                going counter-clockwise. In other words, 0deg creates a bottom to top gradient, 
+                while 90deg generates a left to right gradient.
+                </p>
+                
+                	<div class="linea"></div>
+                
+                <a href="#"class="bianco">READ MORE</a>
+                
+                <img src="images/tondo2.png" alt="bimba" class="boximage"/>
+                
+            </div><!--chiusura id box-->
+            
+            <div class="box">
+            	<h1 class="giallo">NATURE</h1>
+                
+                	<div class="linea"></div>
+                
+                <p>The angle is specified as an angle between a horizontal line and the gradient line, 
+                going counter-clockwise. In other words, 0deg creates a bottom to top gradient, 
+                while 90deg generates a left to right gradient.
+                </p>
+                
+                	<div class="linea"></div>
+                
+                <a href="#"class="giallo">READ MORE</a>
+                
+                <img src="images/tondo3.png" alt="lady" class="boximage"/>
+                
+            </div><!--chiusura id box-->
+            <!--<div class="clear"></div>  da usare se utilizzi il float left-->
+        </div><!--chiusura id contenitore-->
+    </div><!--chiusura id up-->
+</body>
+</html>

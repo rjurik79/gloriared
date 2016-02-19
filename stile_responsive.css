@@ -1,0 +1,238 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS reset inizio*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*FINE DEL CSS RESET*/
+body {
+	line-height: 1; /* regola dal css reset */
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	color:rgba(255,255,255,1);
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing:1px;
+	}
+a{
+	color:rgba(255,255,255,1);
+	text-decoration:none;		
+	}
+h1{
+	
+	}
+.linea{
+	width:30px;
+	border: 2px solid rgba(255,255,255,1);
+	margin: 10px auto;
+	}
+#up{
+	min-height:200px; /*minimo 200px se sfora aumenta ma il limite*/
+	background:url(../images/stranger.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	}
+#up ul{
+	/*border: 1px solid rgba(255,102,0,1);*/
+	width:180px;
+	margin: 0 auto;
+	font-weight:bold;
+	text-transform:uppercase;
+	}
+#up li{
+	/*border: 1px solid rgba(255,0,0,1);*/
+	padding: 6px 4px;
+	margin-bottom:5px;
+	
+	}
+#up li:hover{
+	/*border: 4px solid rgba(0,255,102,1); se vuoi esaltare il bordo*/
+	padding: 10px 6px; /*se vuoi dare effetto fa balà l'occh */
+	}
+#up .selected{
+	border: 2px solid rgba(255,255,255,1);
+	}
+#top{
+	height:172px;
+	background:url(../images/sfuma.png);
+	/*border:1px solid rgba(255,255,255,0.5); --> utile per avere un'idea delle
+	distanze con gli elementi sottostanti*/
+	}
+#top img{
+	margin:20px 0px 20px 0px;
+	}
+#top img:hover{
+	-moz-transform:scale(1,1.5);
+	}
+#contenitore{
+	width:90%;
+	margin: 20px auto;
+	}
+#contenitore h1{
+	font-weight:bold;
+	font-size:30px;
+	color:#f66c65;
+	text-decoration:underline;
+	margin:10px;
+	text-shadow: 2px 2px 1px rgba(150, 150, 171, 0.85);
+	}
+#contenitore .bianco{
+	color:rgba(255,255,255,0.5);
+	text-shadow:none;
+	text-decoration:none;
+	}
+#contenitore .verde{
+	color:rgba(51,255,51,0.5);
+	text-shadow:none;
+	text-decoration:none;
+	}
+#contenitore .giallo{
+	color:rgba(255,255,0,0.5);
+	text-shadow:none;
+	text-decoration:none;
+	}
+.box{
+	width:26%; 
+	border: 2px dashed rgba(255,255,204,0.75);
+	display:inline-block;
+	/*float:left --> per allineare 3 div puoi usare anche il float a sinistra ma
+	subito dopo la fine di questa classe devi inserire una classe clear*/
+	padding: 0 2%;
+	margin-top:20px;
+	}
+.box a{
+	display:block;
+	font-weight:bold;
+	margin: 20px auto;
+	}
+.box p{
+	margin: 20px 5px;
+	text-align:justify;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	letter-spacing:0px;
+	}
+.clear{
+	clear: both;	
+	}
+.boximage{
+	max-width: 190px;
+	}
+	#appare{
+		display:none;
+		}
+	.mappa{
+		width:75%;
+		height:400px;
+		}
+	/*pagina dei contatti*/
+
+/*breakpoint per iphone in versione portrait*/
+@media screen and (max-width:320px){
+	
+	.menu_fisso{
+		display:none;
+		}
+	#appare{
+		display:block;
+		}
+	#contenitore h1 {font-size: 12px;}
+	#up{
+		background-attachment:fixed;
+		background-position:30%;/*serve a spostare il background e piu stiloso*/
+		}
+	.logo{
+		width:190px;	
+	}
+	#contenitore{
+		width:100%;
+		}
+	.box{
+		margin-bottom:30px;
+		}
+	.box img{
+		max-width:150px;
+		width:75%;
+		}
+}
+/*breakpoint per i telefonini in versione landscape*/
+@media screen and (max-width: 480px) and (min-width: 321px) {
+	
+	.logo{
+		width:75%;
+		min-width:260px;	
+	}
+	.content{
+		width:100%;	
+	}
+	.up{
+		background-attachment:fixed;
+		background-position:30%;	
+	}
+	
+}
+
+/*breakpoint per i tablet in versione portrait*/
+@media screen and (max-width: 768px) and (min-width: 481px) {
+	
+	.logo{
+		width:65%;
+		min-width:360px;
+		max-width:394px;	
+	}
+	
+	.content{
+		width:100%;	
+	}
+	.up{
+		background-attachment:fixed;
+		background-position:15%;	
+	}
+	.boxread{
+		width:28%;	
+		padding:0 2%;
+		margin-bottom:50px;
+	}
+	.boxread img{
+		width:85%;	
+	}
+	
+}
